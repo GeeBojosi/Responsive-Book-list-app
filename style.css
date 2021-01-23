@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  outline: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 70%;
+  margin: 0 auto;
+}
+
+form button {
+  margin: 20px 0;
+  padding: 5px 0;
+  border: none;
+  background: steelblue;
+  color: #fff;
+  border-radius: 3px;
+  outline: none;
+}
+
+form button:hover {
+  background: rgb(52, 115, 167);
+  cursor: pointer;
+}
+
+form label {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: lighter;
+  margin: 0.75rem 0;
+  color: #445544;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 0.8rem;
+  color: #445544;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: start; */
+  align-items: baseline;
+  align-content: center;
+  padding: 20px 30px;
+  /* border: 1px solid red; */
+  width: 70%;
+  margin: 0 auto;
+}
+
+.books {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 3px;
+  border: 1px steelblue solid;
+  border-radius: 5px;
+  text-align: center;
+  color: steelblue;
+  width: 30%;
+  font-weight: bold;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, .56);
+}
+
+.books p {
+  color: steelblue;
+  text-align: start;
+}
+
+.books p:first-child {
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid steelblue;
+  padding-bottom: 5px;
+}
+
+.books button {
+  width: 100%;
+  background-color: #fff;
+  color: tomato;
+  border: 1px solid tomato;
+  border-radius: 5px;
+  padding: 10px 0;
+  transition: background-color 200ms ease-in-out;
+}
+
+.books button:hover {
+  background: rgba(233, 74, 46, 0.1);
+  cursor: pointer;
+}
+
+/* Message alerts */
+
+.error {
+  color: #fff;
+  background-color: red;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.success {
+  color: #fff;
+  background-color: green;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .books {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, .56);
+  }
+  .books button {
+    width: 100%;
+    background-color: tomato;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 0;
+    outline: none;
+  }
+  .books button:hover {
+    background: rgb(233, 74, 46);
+    cursor: pointer;
+  }
+  p {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .container {
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .books {
+    width: 80%;
+    border-radius: 2px;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, .56);
+  }
+}
